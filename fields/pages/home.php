@@ -233,6 +233,42 @@
 			),
 		) );
 
+		//Metabox estatísticas
+		$estatisticas = new_cmb2_box( array(
+			'id'            => 'estatisticas',
+			'title'         => __( 'Estatísticas' ),
+			'object_types'  => array( 'page', ),
+			'context'       => 'normal',
+			'priority'      => 'high',
+			'show_names'    => true,
+			'closed'        => true,
+		) );
+		$estatisticas_itens = $estatisticas->add_field( array(
+			'id'            => 'estatisticas_itens',
+			'type'          => 'group',
+			'options'       => array(
+				'group_title'   => __( 'Item {#}' ),
+				'add_button'    => __( 'Adicionar Outro Item' ),
+				'remove_button' => __( 'Remover Item' ),
+				'sortable'      => true,
+				'closed'        => true,
+			),
+		) );
+		$estatisticas->add_group_field( $estatisticas_itens, array(
+			'name'       => __( 'Estatística' ),
+			'id'         => 'wsg_estatisticas_itens',
+			'type'       => 'text',
+		) );
+		$estatisticas->add_group_field( $estatisticas_itens, array(
+			'name'       => __( 'Legenda' ),
+			'id'         => 'wsg_estatisticas_itens_legenda',
+			'type'       => 'text',
+		) );
+		$estatisticas->add_field( array(
+			'name'       => __( 'Texto Descritivo' ),
+			'id'         => 'wsg_estatisticas_texto',
+			'type'       => 'wysiwyg',
+		) );
 	}
 
 ?>

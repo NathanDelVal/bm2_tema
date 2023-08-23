@@ -1,0 +1,41 @@
+.at-estatisticas {
+    padding: 50px;
+}
+
+.at-estatisticas h1 {
+    position: relative;
+}
+
+.at-estatisticas h1::after {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 5px;
+    background: var(--color-details-primary);
+    left: calc(50% - 20px);
+    bottom: 0px;
+}
+
+.at-estatisticas p {
+    color: gray;
+}
+
+.at-estatisticas pre {
+    overflow: hidden;
+}
+
+.at-estatisticas pre * {
+    white-space: pre-line;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.at-estatisticas ul * {
+    text-align:center;
+}
+
+@media screen and (max-width:767px) {
+    .at-estatisticas ul {
+        flex-direction: column;       
+    }
+}
