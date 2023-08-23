@@ -1,0 +1,60 @@
+/****************************************************************************************** 
+
+    Arquivo sempre será importado na page HOME.css 
+        ( Ou arquivo usado para links de importação.)
+
+    Exemplo code: 
+        @import url("css_pages/home_css/home-at-about.css");
+    
+    
+******************************************************************************************/
+
+.at-about{
+    padding: 70px 0;
+    background-color: var(--color-details-primary);
+    color: var(--color-font-white);
+}
+.at-about .at-about_box p{
+    color: var(--color-font-white);
+}
+.at-about .row{
+    align-items: center;
+}
+.at-about img{
+    max-width: 450px;
+}
+
+.at-about .at-title-main_01{
+    color: var(--color-font-white);
+    margin-bottom: 42px;
+}
+.at-about .at-title-main_01::after{
+    background-color: var(--color-font-white);
+
+}
+
+.at-about_box figure{
+    text-align: center;
+}
+
+@media screen and (max-width: 992px){
+
+}
+
+/***** Tamanho para smartphones na vertical *****/
+@media screen and (max-width: 576px){
+
+    .at-about img{
+        max-width: 350px;
+        margin-bottom: 40px;
+    }
+  
+}
+/***** Tamanho para smartphones na vertical *****/
+
+/***** Tamanho para smartphones na horizontal *****/
+@media screen and (max-width: 768px) and (min-width: 577px) {
+
+
+}
+/***** Tamanho para smartphones na horizontal *****/

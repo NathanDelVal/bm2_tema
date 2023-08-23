@@ -1,0 +1,107 @@
+/****************************************************************************************** 
+
+    Arquivo sempre será importado na page HOME.css 
+        ( Ou arquivo usado para links de importação.)
+
+    Exemplo code: 
+        @import url("css_pages/home_css/footer.css");
+    
+    
+******************************************************************************************/
+
+.footer-main{
+    padding: 70px 0 20px 0;
+    background-color: var(--bg-color-primary);
+}
+.footer-main .row{
+    align-items: center;
+}
+.footer-main .at-logo_footer img{
+    max-height: 100px;
+}
+
+.footer-list-info li {
+    margin-bottom: 10px;
+}
+.footer-list-info a{
+    color: var(--color-font);
+}
+.footer-list-info li a {
+    display: flex;
+    align-items: center;
+}
+
+.footer-list-info li span{
+    color: var(--color-details-primary);
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+
+.footer-main .list-media-social{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: right;
+
+}
+.footer-main .list-media-social li{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-details-primary);
+    border-radius: 50px;
+    transition: .3s;
+}
+.footer-main .list-media-social li:hover{
+    background-color: var(--bg-color-black);
+}
+.footer-main .list-media-social a{
+    color: var(--color-font-white);
+    font-size: 14px;
+    font-weight: 300;
+}
+.ajust-footer{
+    text-align: right;
+}
+
+.copy{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 992px){
+
+}
+
+/***** Tamanho para smartphones na vertical *****/
+@media screen and (max-width: 576px){
+    .footer-main{
+        padding: 30px 
+    }
+    .footer-main .list-media-social {
+        justify-content: center;
+    }
+    .ajust-footer {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .at-logo_footer{
+        text-align: center;
+    }
+    .footer-list-info{
+        display: none;
+    }
+}
+/***** Tamanho para smartphones na vertical *****/
+
+/***** Tamanho para smartphones na horizontal *****/
+@media screen and (max-width: 768px) and (min-width: 577px) {
+
+
+}
+/***** Tamanho para smartphones na horizontal *****/

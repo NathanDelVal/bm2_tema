@@ -1,0 +1,54 @@
+/******************************************************************************************
+
+    Arquivo sempre será importado na page HOME.css
+        ( Ou arquivo usado para links de importação.)
+
+    Exemplo code:
+        @import url("css_pages/home_css/header-main.css");
+
+******************************************************************************************/
+
+.at-header-main{
+    padding: 10px 0;
+}
+.navbar-brand img{
+    max-height: 80px;
+}
+.navbar{
+    justify-content: space-between;
+}
+
+.navbar-collapse{
+    justify-content: right;
+}
+
+.nav-link{
+    font-family: 'Noto Serif Toto', serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color-font);
+    transition: .2s ease-in-out;
+}
+.nav-link span{
+    font-family: inherit;
+}
+.nav-link:hover{
+    color: var(--color-details-primary);
+}
+.navbar-nav .active .nav-link, .navbar-nav .show>.nav-link {
+    color: var(--color-details-primary);
+}
+
+
+@media screen and (max-width: 992px){
+    .navbar-toggler{
+        background-color: var(--color-details-primary);
+    }
+    .navbar-nav{
+        text-align: center;
+        padding-top: 30px;
+    }
+    .nav-link{
+        border-bottom: 1px solid var(--bg-color-primary);
+    }
+}

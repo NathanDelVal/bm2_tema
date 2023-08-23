@@ -1,0 +1,155 @@
+/****************************************************************************************** 
+
+    Arquivo sempre será importado na page HOME.css 
+        ( Ou arquivo usado para links de importação.)
+
+    Exemplo code: 
+        @import url("css_pages/home_css/home-at-cases.css");
+    
+    
+******************************************************************************************/
+.at-contrast-banner_box{
+    margin-top: -80px;
+    z-index: 999;
+    background-color: var(--color-font-white);
+    position: relative;
+    text-align: center;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+.at-contrast-banner_box span{
+    color: var(--color-details-primary);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+.at-cases{
+    padding: 0 0 70px 0;
+    margin: 0 100px ;
+}
+.at-cases .row>*{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.at-cases .row{
+    width: 98%;
+    margin: 0 auto;
+    row-gap: 10px;
+} 
+.at-cases_box_info{
+    padding: 40px 20px;
+    background-color: var(--bg-color-black);
+    color: var(--color-font-white);
+    height: 100%;
+    position: relative;
+}
+
+.at-cases_box_info_header{
+    height: 95px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+}
+
+.at-cases_box_info h3{
+    font-size: 28px;
+    transition: .5s ease-out;
+    height: 140px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.at-cases_box_info h3::before{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background-color: var(--color-details-primary);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .5s ease-out;
+}
+.at-cases_box_info:hover{
+    background-color: var(--bg-color-primary);
+}
+.at-cases_box_info:hover h3::before{
+    width: 100%;
+    background-color: var(--color-details-primary);
+    transition: .8s ease-out;
+}
+.at-cases_box_info:hover h3{
+    color: var(--bg-color-black);
+    white-space: nowrap;
+}
+.at-cases_box_info a{
+    color: var(--color-font-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s ease-out;
+    font-size: 12px;
+    font-weight: 500;
+}
+.at-cases_box_info:hover a{
+    color: var(--bg-color-black);
+}
+
+.at-cases_box_info a span{
+    font-size: 28px;
+    transition: .5s ease-out;
+}
+.at-cases_box_info a:hover span{
+    transform: translateX(10px);
+}
+.at-cases_box_info a img{
+    max-width: 30px;
+}
+
+.at-contrast-banner_box .at-title-main_01{
+    font-size: 33px;
+    font-weight: 700;
+    color: var(--color-font);
+    position: relative;
+}
+.at-contrast-banner_box .at-title-main_01::after{
+    content: '';
+    background-color: var(--color-details-primary);
+    left: calc(50% - 40px);
+}
+
+
+
+
+@media screen and (max-width: 992px){
+
+}
+
+/***** Tamanho para smartphones na vertical *****/
+@media screen and (max-width: 576px){
+
+    .at-cases {
+        padding: 0 0 0px 0;
+        margin: 0 0px;
+    }
+    .at-contrast-banner_box{
+        margin-top: -50px;
+    }
+
+}
+/***** Tamanho para smartphones na vertical *****/
+
+/***** Tamanho para smartphones na horizontal *****/
+@media screen and (max-width: 768px) and (min-width: 577px) {
+
+
+}
+/***** Tamanho para smartphones na horizontal *****/

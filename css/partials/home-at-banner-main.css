@@ -1,0 +1,91 @@
+/******************************************************************************************
+	Arquivo sempre será importado na page HOME.css
+		( Ou arquivo usado para links de importação.)
+
+	Exemplo code:
+		@import url("css_pages/home_css/home-at-banner-main.css");
+
+******************************************************************************************/
+
+.at-banner-main{
+	position: relative;
+	z-index: 0;
+	clip-path: polygon(0 0%, 100% 0, 100% 95%, 0% 100%);
+}
+
+/*.at-banner-main::before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 0;
+	opacity: .5;
+	z-index: 0;
+}*/
+
+.at-banner-main figure img{
+	display: block;
+	width: 100%;
+}
+
+.at-banner-main_mobile{
+	display: none;
+}
+
+.at-banner-main_content{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 3;
+}
+
+.at-banner-main_box span{
+	color: var(--color-font-white);
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 2;
+	display: block;
+}
+.at-banner-main_box h1{
+	color: var(--color-font-white);
+	font-size: 50px;
+	font-weight: 600;
+	max-width: 60%;
+	margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 992px){
+
+}
+
+/***** Tamanho para smartphones na vertical *****/
+@media screen and (max-width: 576px){
+	.at-banner-main{
+		min-height: 400px;
+		padding-top: 40px;
+	}
+	.at-banner-main_box h1 {
+		color: var(--color-font-white);
+		font-size: 30px;
+		font-weight: 600;
+		max-width: 100%;
+		margin-bottom: 20px;
+	}
+}
+/***** Tamanho para smartphones na vertical *****/
+
+/***** Tamanho para smartphones na horizontal *****/
+@media screen and (max-width: 768px) and (min-width: 577px) {
+
+
+}
+/***** Tamanho para smartphones na horizontal *****/

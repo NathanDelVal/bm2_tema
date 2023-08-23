@@ -1,0 +1,21 @@
+/******************************************************************************************
+
+    Arquivo onde vamos linkar todo CSS do site!
+        SEMPRE ATENTO COM AS LINHAS, QUALQUER ERRO pode influenciar no funcionamento do site
+            SEMPRE DEIXAR SOMENTE AS LINHAS DAS SESSÕES REFERENTE AO TAMPLATE
+
+******************************************************************************************/
+
+
+@import url("../partials/home-at-banner-main.css");
+
+@import url("../partials/home-at-cases.css");
+
+@import url("../partials/home-at-services.css");
+
+@import url("../partials/home-at-about.css");
+
+@import url("../partials/home-at-client.css");
+
+@import url("../partials/home-at-team.css");
+

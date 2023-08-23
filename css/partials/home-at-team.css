@@ -1,0 +1,59 @@
+/****************************************************************************************** 
+
+    Arquivo sempre será importado na page HOME.css 
+        ( Ou arquivo usado para links de importação.)
+
+    Exemplo code: 
+        @import url("css_pages/home_css/home-at-team.css");
+    
+    
+******************************************************************************************/
+.at-team{
+    padding: 70px 0 40px 0;
+}
+.at-team header{
+    margin-bottom: 20px;
+}
+.at-team .row{
+    margin-top: 50px;
+}
+
+.at-team_box {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.at-team_box h4{
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+    color: var(--color-details-primary);
+}
+.at-team_box span{
+    font-family: 'Noto Serif Toto', serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 992px){
+
+}
+
+/***** Tamanho para smartphones na vertical *****/
+@media screen and (max-width: 576px){
+
+    .at-team .row{
+        justify-content: flex-start;
+        margin-top: 50px;
+    }
+    
+  
+}
+/***** Tamanho para smartphones na vertical *****/
+
+/***** Tamanho para smartphones na horizontal *****/
+@media screen and (max-width: 768px) and (min-width: 577px) {
+
+
+}
+/***** Tamanho para smartphones na horizontal *****/

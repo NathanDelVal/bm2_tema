@@ -1,0 +1,83 @@
+/****************************************************************************************** 
+
+    Arquivo sempre será importado na page HOME.css 
+        ( Ou arquivo usado para links de importação.)
+
+    Exemplo code: 
+        @import url("css_pages/home_css/home-at-services.css");
+    
+    
+******************************************************************************************/
+
+.at-services{
+    padding: 50px 0;
+    background-color: var(--bg-color-primary);
+}
+.at-services .container{
+    position: relative;
+}
+.at-services .row{
+    padding-top: 50px;
+}
+
+.at-services_box h3{
+    padding: 15px 0 5px 0;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Noto Serif Toto', serif;
+
+}
+.at-services_box figure img{
+    max-height: 70px;
+    transition: all .8s ;
+}
+
+.at-services_box{
+    border-radius: 10px;
+    padding: 20px;
+}
+.at-services_box:hover{
+    box-shadow: 0px 10px 15px 2px #ebebeb;
+}
+.at-services_box:hover img{
+    transform: scale(1.1);
+}
+
+.swiper-wrapper{
+    margin-top: 40px;
+}
+.swiper-button-next, .swiper-button-prev {
+    color: #09ae95 !important;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 35px !important;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: -20px !important;
+    left: auto;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: -20px !important;
+    right: auto;
+}
+
+
+
+/***** Tamanho para smartphones na vertical *****/
+@media screen and (max-width: 576px){
+
+    .swiper-button-next, .swiper-button-prev {
+        display: none !important;
+    }
+}
+/***** Tamanho para smartphones na vertical *****/
+
+/***** Tamanho para smartphones na horizontal *****/
+@media screen and (max-width: 768px) and (min-width: 577px) {
+
+    .swiper-button-next, .swiper-button-prev {
+        display: none !important;
+    }
+}
+/***** Tamanho para smartphones na horizontal *****/

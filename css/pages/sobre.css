@@ -1,0 +1,80 @@
+
+
+.at-about-main{
+    padding: 70px 0;
+    background-color: var(--bg-color-primary);
+}
+
+.at-about-main .row{
+    align-items: center;
+}
+.at-about-main .row figure img{
+    max-width: 500px;
+}
+
+.at-about-main .at-title-main_01{
+    margin-bottom: 50px;
+}
+
+.at-about-main_02{
+    background-color: var(--color-details-primary);
+    padding: 50px;
+    color: var(--color-font-white);
+}
+
+.wq-mvv-item {
+    text-align: center;
+}
+
+.wq-mvv-item img{
+    max-height: 64px;
+    margin-bottom: 10px;
+}
+.wq-mvv-item h4{
+    margin-bottom: 10px;
+}
+.wq-mvv-item p{
+    color: var(--color-font-white);
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 992px){
+    .at-about-main .row figure img {
+        max-width: 400px;
+    }
+    .at-about-main .row figure {
+        text-align: center;
+    }
+    .at-about-main .row figure img {
+        max-width: 400px;
+        margin-bottom: 30px;
+    }
+}
+
+/***** Tamanho para smartphones na vertical *****/
+@media screen and (max-width: 576px){
+    .at-about-main .row figure {
+        text-align: center;
+    }
+    .at-about-main .row figure img{
+        max-width: 300px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .wq-mvv-item{
+        margin-bottom: 20px;
+    }
+
+}
+/***** Tamanho para smartphones na vertical *****/
+
+/***** Tamanho para smartphones na horizontal *****/
+@media screen and (max-width: 768px) and (min-width: 577px) {
+
+    .at-about-main .row figure img {
+        max-width: 350px;
+    }
+}
+/***** Tamanho para smartphones na horizontal *****/
+
+

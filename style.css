@@ -1,0 +1,210 @@
+@import url(css/main/header.css);
+@import url(css/main/footer.css);
+
+:root{
+    --color-font: #121415;
+    --color-font-white: #ffffff;
+
+    --color-details-primary: #09ae95;
+
+    --bg-color-primary: #f6f6f6;
+    --bg-color-black: #000000;
+}
+
+/******* RESET *******/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body figure{
+    margin: 0px;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: var(--color-font);
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+    padding: 0;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.color-color-details-primary{
+    color: var(--color-details-primary);
+}
+/******* RESET *******/
+
+/******* Title - Globais *******/
+.at-title-main_01{
+    font-size: 33px;
+    font-weight: 600;
+    color: var(--color-font);
+    position: relative;
+    font-family: 'Noto Serif Toto', serif;
+
+}
+.at-title-main_01::after{
+    content: '';
+    width: 80px;
+    height: 2px;
+    background-color: var(--color-details-primary);
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+/******* Title - Globais *******/
+
+/******* Buttons - Globais *******/
+.at-btn-main{
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--color-details-primary);
+    color: var(--color-font-white);
+    display: inline-flex;
+    border-radius: 50px;
+    transition: .3s ease-out;
+    border: none;
+}
+.at-btn-main:hover{
+    transform: scale(1.04);
+	z-index: 2;
+}
+.btn-main_page:hover{
+    transform: scale(1.08);
+	z-index: 2;
+}
+/******* Buttons - Globais *******/
+
+/******* Breacrumb *******/
+.at-breacrumb{
+    background-color: var(--color-details-primary);
+    padding: 20px 0 15px 0;
+    color: var(--color-font-white);
+}
+
+.at-breacrumb_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.at-breacrumb h3{
+    font-size: 20px;
+    line-height: 20px;
+}
+.at-breacrumb p{
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--color-font-white);
+    margin-bottom: 0 !important;
+}
+
+.at-breacrumb p a{
+    color: var(--color-font-white);
+}
+
+
+@media screen and (max-width: 992px){
+    .navbar-toggler-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        background-image: url(./img/menu.svg);
+    }
+
+}
+
+/***** Tamanho para smartphones na vertical *****/
+@media screen and (max-width: 576px){
+
+    .at-title-main_01{
+        font-size: 28px;
+    }
+    
+    .navbar-brand img {
+        max-height: 75px;
+    }
+
+}
+/***** Tamanho para smartphones na vertical *****/
+
+/***** Tamanho para smartphones na horizontal *****/
+@media screen and (max-width: 768px) and (min-width: 577px) {
+
+
+}
+/***** Tamanho para smartphones na horizontal *****/
+
+
+/*** wq-whatsapp_btn ***/
+
+.wq-whatsapp_btn{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    height: 60px;
+    width: 60px;
+    color: #fff;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #4dc247;
+    z-index: 99;
+}
+.wq-whatsapp_btn a{
+    color: #fff;
+}
+.wq-whatsapp_btn:before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    border-radius: 50%;
+    background-color: rgba(77, 194, 71,.7);
+    animation: whatsapp 2s infinite 2s alternate;
+}
+
+@keyframes whatsapp{
+    from{
+        opacity: .3;
+        transform: scale(1);
+        box-shadow: 0px 0px 0px #4dc247;
+    }
+    to{
+        opacity: .7;
+        transform: scale(1.25);
+        box-shadow: 0px 0px 20px #4dc247;
+    }
+}
+
+/*** wq-whatsapp_btn ***/
+
+

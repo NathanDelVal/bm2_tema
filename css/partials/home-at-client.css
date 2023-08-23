@@ -1,0 +1,29 @@
+/****************************************************************************************** 
+
+    Arquivo sempre será importado na page HOME.css 
+        ( Ou arquivo usado para links de importação.)
+
+    Exemplo code: 
+        @import url("css_pages/home_css/home-at-client.css");
+    
+    
+******************************************************************************************/
+
+.at-client{
+    padding: 70px 0;
+    background-color: var(--bg-color-primary);
+}
+
+.at-client_box{
+    background-color: var(--color-font-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.at-client .row{
+    margin-top: 50px;
+}
