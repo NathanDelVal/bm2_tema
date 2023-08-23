@@ -17,10 +17,17 @@
 .at-team .row{
     margin-top: 50px;
 }
-
+.at-team .owl-nav {
+    transform: translateY(-30px);
+}
 .at-team_box {
     text-align: center;
     margin-bottom: 30px;
+}
+.at-team_box img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
 }
 .at-team_box h4{
     font-size: 14px;

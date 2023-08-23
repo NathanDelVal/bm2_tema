@@ -53,6 +53,55 @@ li{
 }
 /******* RESET *******/
 
+
+/******* Carousel padronização *******/
+.owl-item > div {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.owl-nav {
+    position: relative;
+    bottom: calc(50% - 17.5px);
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #09ae95 !important;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 35px !important;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: -20px !important;
+    left: auto;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: -20px !important;
+    right: auto;
+}
+
+/***** Tamanho para smartphones na vertical *****/
+@media screen and (max-width: 576px){
+
+    .swiper-button-next, .swiper-button-prev {
+        display: none !important;
+    }
+}
+/***** Tamanho para smartphones na vertical *****/
+
+/***** Tamanho para smartphones na horizontal *****/
+@media screen and (max-width: 768px) and (min-width: 577px) {
+
+    .swiper-button-next, .swiper-button-prev {
+        display: none !important;
+    }
+}
+/***** Tamanho para smartphones na horizontal *****/
+
+
+/*************************************/
+
 /******* Title - Globais *******/
 .at-title-main_01{
     font-size: 33px;
@@ -84,7 +133,13 @@ li{
     display: inline-flex;
     border-radius: 50px;
     transition: .3s ease-out;
-    border: none;
+    border: 2px solid white;
+}
+@media screen and (max-width:576px) {
+    .at-btn-main{
+        padding: 5px 15px;
+        font-size: 12px;
+    }
 }
 .at-btn-main:hover{
     transform: scale(1.04);

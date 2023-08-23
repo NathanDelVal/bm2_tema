@@ -13,6 +13,10 @@
 	clip-path: polygon(0 0%, 100% 0, 100% 95%, 0% 100%);
 }
 
+.at-banner-main .swiper [class*=prev], .at-banner-main .swiper [class*=next] {
+	display: none;
+}
+
 /*.at-banner-main::before{
 	content: '';
 	width: 100%;

@@ -46,38 +46,3 @@
 .swiper-wrapper{
     margin-top: 40px;
 }
-.swiper-button-next, .swiper-button-prev {
-    color: #09ae95 !important;
-}
-.swiper-button-next:after, .swiper-button-prev:after{
-    font-size: 35px !important;
-}
-.swiper-button-next, .swiper-rtl .swiper-button-prev {
-    right: -20px !important;
-    left: auto;
-}
-
-.swiper-button-prev, .swiper-rtl .swiper-button-next {
-    left: -20px !important;
-    right: auto;
-}
-
-
-
-/***** Tamanho para smartphones na vertical *****/
-@media screen and (max-width: 576px){
-
-    .swiper-button-next, .swiper-button-prev {
-        display: none !important;
-    }
-}
-/***** Tamanho para smartphones na vertical *****/
-
-/***** Tamanho para smartphones na horizontal *****/
-@media screen and (max-width: 768px) and (min-width: 577px) {
-
-    .swiper-button-next, .swiper-button-prev {
-        display: none !important;
-    }
-}
-/***** Tamanho para smartphones na horizontal *****/

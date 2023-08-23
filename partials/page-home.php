@@ -86,9 +86,6 @@ $id_page = get_the_ID();
 			<div class="swiper carousel_cases">
 				<?php
 				$wsg_cases_na_home = get_post_meta($id_page, 'wsg_cases_na_home', true);
-				//print_r("<pre>");
-				//print_r(get_post_meta($id_page));
-				//print_r("</pre>");
 				if (!empty($wsg_cases_na_home)) {
 				?>
 					<div class="swiper-wrapper">
@@ -308,12 +305,12 @@ $id_page = get_the_ID();
 			<h2 class="at-title-main_01"><?php echo get_post_meta($id_page, 'wsg_equipe_titulo', true); ?></h2>
 		</header>
 		<div class="row">
+			<div class="owl-carousel">
 			<?php
 			$wsg_equipe_na_home = get_post_meta($id_page, 'wsg_equipe_na_home', true);
 			if (!empty($wsg_equipe_na_home)) {
 				foreach ($wsg_equipe_na_home as $key => $equipeID) {
 			?>
-					<div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-6">
 						<div class="at-team_box">
 							<figure>
 								<?php
@@ -321,18 +318,18 @@ $id_page = get_the_ID();
 								getImageThumb($wsg_equipe_item_img_id, '180x180');
 								?>
 							</figure>
-							<h4><?php echo get_the_title($equipeID) ?></h4>
+							<h4><?php echo get_the_title($equipeID); ?></h4>
 							<span><?php echo get_post_meta($equipeID, 'wsg_equipe_item_cargo', true); ?></span>
 						</div>
-					</div>
 			<?php
 				}
 			}
 			?>
+			</div>
 		</div>
-
-	</div>
 </section>
 
 <?php //get_footer(); 
 ?>
+		</div>
+</section>
