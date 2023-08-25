@@ -114,7 +114,7 @@ echo get_post_meta($id_google, 'wsg_codes_footer', true);
 	$('.owl-carousel.video-carousel').owlCarousel({
 		loop: true,
 		nav: true,
-		navText: ['<div class="swiper-button-prev" style="transform:translateX(-10px);"></div>', '<div class="swiper-button-next" style="transform:translateX(10px);"></div>'],
+		navText: ['<div class="swiper-button-prev"></div>', '<div class="swiper-button-next" style="transform:translateX(-10px)"></div>'],
 		dots: false,
 		autoplay: false,
 		responsive: {
@@ -129,7 +129,7 @@ echo get_post_meta($id_google, 'wsg_codes_footer', true);
 	$('.owl-carousel').owlCarousel({
 		loop: true,
 		nav: true,
-		navText: ['<div class="swiper-button-prev" style="transform:translateX(-10px);"></div>', '<div class="swiper-button-next" style="transform:translateX(10px);"></div>'],
+		navText: ['<div class="swiper-button-prev"></div>', '<div class="swiper-button-next"></div>'],
 		dots: false,
 		autoplay: true,
 		autoplayTimeout: 3000,

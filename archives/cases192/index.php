@@ -32,9 +32,6 @@ if (empty($allArgs)) {
 			),
 		);
 		$query = new WP_Query($arrayQuery);
-		// echo '<pre>';
-		// echo var_dump($query);
-		// echo '</pre>';
 		if ($query->have_posts()) {
 		?>
 			<div class="row" style="gap:50px">
@@ -46,7 +43,6 @@ if (empty($allArgs)) {
 
 						$caseID = get_the_ID();
 					?>
-						<!-- <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12"> -->
 						<div class="at-cases_box">
 							<figure>
 								<?php

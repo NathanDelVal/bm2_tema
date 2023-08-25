@@ -139,21 +139,21 @@ li{
 
 /***********************************************************/
 /***** Tamanho para smartphones na vertical *****/
-@media screen and (max-width: 576px){
+/* @media screen and (max-width: 576px){
 
     .swiper-button-next, .swiper-button-prev {
         display: none !important;
     }
-}
+} */
 /***** Tamanho para smartphones na vertical *****/
 
 /***** Tamanho para smartphones na horizontal *****/
-@media screen and (max-width: 768px) and (min-width: 577px) {
+/* @media screen and (max-width: 768px) and (min-width: 577px) {
 
     .swiper-button-next, .swiper-button-prev {
         display: none !important;
     }
-}
+} */
 /***** Tamanho para smartphones na horizontal *****/
 
 

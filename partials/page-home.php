@@ -2,10 +2,6 @@
 // get_header();
 
 $id_page = get_the_ID();
-
-// echo '<pre>';
-// echo print_r(get_post_meta($id_page));
-// echo '</pre>';
 ?>
 
 <section class="at-banner-main">
@@ -253,29 +249,6 @@ $id_page = get_the_ID();
 		</div>
 	</div>
 </section>
-<!-- <section class="at-about">
-	<div class="container">
-		<div class="row">
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-				<div class="at-about_box">
-					<figure>
-						<?php
-						//$wsg_sobre_img_id = get_post_meta($id_page, 'wsg_sobre_img_id', true);
-						//getImageThumb($wsg_sobre_img_id, '550x550');
-						?>
-					</figure>
-				</div>
-			</div>
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-				<div class="at-about_box">
-					<h2 class="at-title-main_01"><?php //echo get_post_meta($id_page, 'wsg_sobre_titulo', true); ?></h2>
-
-					<?php //echo get_post_meta($id_page, 'wsg_sobre_texto', true); ?>
-				</div>
-			</div>
-		</div>
-	</div>
-</section> -->
 <section class="sobre-nos-banner">
 		<?php if(!empty(get_post_meta($id_page, 'sobre_banner_md', true))) { ?>
 			<figure>

@@ -148,35 +148,6 @@
 		) );
 
 
-		// Metabox Sobre
-		// $sobre = new_cmb2_box( array(
-		// 	'id'            => 'sobre',
-		// 	'title'         => __( 'Sobre nós' ),
-		// 	'object_types'  => array( 'page', ),
-		// 	'context'       => 'normal',
-		// 	'priority'      => 'high',
-		// 	'show_names'    => true,
-		// 	'closed'        => true,
-		// ) );
-		// $sobre->add_field( array(
-		// 	'name'       => __( 'Imagem da seção' ),
-		// 	'desc'       => __( 'Tamanho recomendado <strong>550x550</strong>' ),
-		// 	'id'         => 'wsg_sobre_img',
-		// 	'type' => 'file',
-		// 	'preview_size' => array( 550/1, 550/1 ),
-		// 	'query_args' => array( 'type' => 'image' ),
-		// ) );
-		// $sobre->add_field( array(
-		// 	'name'       => __( 'Título da seção' ),
-		// 	'id'         => 'wsg_sobre_titulo',
-		// 	'type'       => 'text',
-		// ) );
-		// $sobre->add_field( array(
-		// 	'name'       => __( 'texto da seção' ),
-		// 	'id'         => 'wsg_sobre_texto',
-		// 	'type'       => 'wysiwyg',
-		// ) );
-
 	//Metabox sobre banner
 	$banner_sobre = new_cmb2_box( array(
 		'id'            => 'banner_sobre',
