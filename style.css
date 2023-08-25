@@ -11,6 +11,28 @@
     --bg-color-black: #000000;
 }
 
+*[class*=display-] {
+    display: none;
+}
+
+@media screen and (min-width:1920px) {
+    .display-lg {
+        display: initial;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1919px){
+    .display-md {
+        display: initial;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .display-sm {
+        display: initial;
+    }
+}
+
 /******* RESET *******/
 
 *{
@@ -81,6 +103,41 @@ li{
     right: auto;
 }
 
+.owl-carousel.video-carousel .owl-item > div {
+    width:98%;
+    margin: 0 1%;
+}
+
+.owl-carousel.video-carousel iframe {
+    width: 100%;
+    aspect-ratio: 2/1;
+}
+
+@media screen and (max-width: 767px) {
+    .owl-carousel.video-carousel iframe {
+        aspect-ratio: 1/1;
+    }
+    .owl-carousel.video-carousel .owl-item > div {
+        width:95%;
+        margin: 0 2.5%;
+    }
+}
+
+.owl-carousel.video-carousel .owl-nav {
+    position: absolute;
+    width: 100%;
+    top: 50%;   
+}
+
+.owl-carousel.video-carousel .owl-nav *[class*=prev] {
+    left: -10px;
+}
+
+.owl-carousel.video-carousel .owl-nav *[class*=next] {
+    right: -10px;
+}
+
+/***********************************************************/
 /***** Tamanho para smartphones na vertical *****/
 @media screen and (max-width: 576px){
 

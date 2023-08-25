@@ -60,3 +60,10 @@
     }
 }
 /***** Tamanho para smartphones na horizontal *****/
+
+/****************** NEW ABOUT AREA *****************/
+.sobre-nos-banner img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
