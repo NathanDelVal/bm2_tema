@@ -38,7 +38,7 @@
     padding-left: 5px;
 }
 .at-cases_box img{
-    width: 95%;
+    width: 95% !important;
     margin: 0 2.5%;
 }
 
