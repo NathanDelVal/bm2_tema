@@ -38,7 +38,8 @@
     padding-left: 5px;
 }
 .at-cases_box img{
-    width: 100%;
+    width: 95%;
+    margin: 0 2.5%;
 }
 
 .at-cases .row{
@@ -53,15 +54,17 @@
     margin: 0 auto;
 }
 .at-cases_carousel-container .swiper-button-prev{
-    left: -45px !important;
+    /* left: -45px !important; */
 }
 .at-cases_carousel-container .swiper-button-next{
-    right: -45px !important;
+    /* right: -45px !important; */
 }
 
 
 .at-cases_box_info{
     color: var(--color-font-white);
+    width: 95%;
+    margin: 0 2.5%;
     padding: 40px 20px;
     height: 100%;
     position: relative;
