@@ -9,11 +9,11 @@
     padding-top: 40px;
 }
 
-.at-cases .at-title-main_01 {
+.at-cases .at-title-main_01, section.case-carousel .at-title-main_01 {
     text-align: center;
 }
 
-.at-cases .at-title-main_01::after {
+.at-cases .at-title-main_01::after, section.case-carousel .at-title-main_01::after {
     content: '';
     left: calc(50% - 40px);
 }
