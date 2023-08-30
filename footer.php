@@ -111,43 +111,65 @@ echo get_post_meta($id_google, 'wsg_codes_footer', true);
 ?>
 <?php wp_footer(); ?>
 <script>
-	$('.owl-carousel.video-carousel').owlCarousel({
-		loop: true,
-		nav: true,
-		navText: ['<div class="swiper-button-prev"></div>', '<div class="swiper-button-next" style="transform:translateX(-10px)"></div>'],
-		dots: false,
-		autoplay: false,
-		responsive: {
-			0: {
-				items: 1
-			}, 
-			769: {
-				items: 2
+	$(function() {
+		$('.owl-carousel.video-carousel').owlCarousel({
+			loop: true,
+			nav: true,
+			navText: ['<div class="swiper-button-prev"></div>', '<div class="swiper-button-next" style="transform:translateX(-10px)"></div>'],
+			dots: false,
+			autoplay: false,
+			responsive: {
+				0: {
+					items: 1
+				},
+				769: {
+					items: 2
+				}
 			}
-		}
-	});
-	$('.owl-carousel').owlCarousel({
-		loop: true,
-		nav: true,
-		navText: ['<div class="swiper-button-prev"></div>', '<div class="swiper-button-next"></div>'],
-		dots: false,
-		autoplay: true,
-		autoplayTimeout: 3000,
-		autoplayHoverPause: true,
-		responsive: {
-			0: {
-				items: 1
-			},
-			576: {
-				items: 2
-			},
-			768: {
-				items: 3
-			},
-			992: {
-				items: 4
+		});
+		$('.owl-carousel.case-carousel').owlCarousel({
+			loop: true,
+			nav: true,
+			navText: ['<div class="swiper-button-prev"></div>', '<div class="swiper-button-next"></div>'],
+			dots: false,
+			autoplay: true,
+			autoplayTimeout: 3000,
+			autoplayHoverPause: true,
+			responsive: {
+				0: {
+					items: 1
+				},
+				768: {
+					items: 2
+				},
+				992: {
+					items: 3
+				}
 			}
-		}
+		});
+		$('.owl-carousel').owlCarousel({
+			loop: true,
+			nav: true,
+			navText: ['<div class="swiper-button-prev"></div>', '<div class="swiper-button-next"></div>'],
+			dots: false,
+			autoplay: true,
+			autoplayTimeout: 3000,
+			autoplayHoverPause: true,
+			responsive: {
+				0: {
+					items: 1
+				},
+				576: {
+					items: 2
+				},
+				768: {
+					items: 3
+				},
+				992: {
+					items: 4
+				}
+			}
+		});
 	});
 </script>
 </body>

@@ -145,11 +145,8 @@
     left: calc(50% - 40px);
 }
 
-
-
-
-@media screen and (max-width: 992px){
-
+.case-carousel .owl-nav {
+    display: block !important;
 }
 
 /***** Tamanho para smartphones na vertical *****/
