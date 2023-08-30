@@ -147,6 +147,16 @@ echo get_post_meta($id_google, 'wsg_codes_footer', true);
 				}
 			}
 		});
+		$('.owl-carousel.outdoor-carousel').owlCarousel({
+			loop: true,
+			nav: true,
+			navText: ['<div class="swiper-button-prev"></div>', '<div class="swiper-button-next"></div>'],
+			dots: false,
+			autoplay: true,
+			autoplayTimeout: 3000,
+			autoplayHoverPause: true,
+			items: 1
+		});
 		$('.owl-carousel').owlCarousel({
 			loop: true,
 			nav: true,

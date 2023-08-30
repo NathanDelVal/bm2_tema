@@ -23,17 +23,32 @@
 
 	<?php
 	$carrossel_itens = get_post_meta(get_the_ID(), 'wsg_case_carrossel', true);
-	if (!empty($carrossel_itens)) { ?>
+	$outdoor_itens = get_post_meta(get_the_ID(), 'wsg_outdoor_carrossel', true);
+
+	if (!empty($carrossel_itens) || !empty($outdoor_itens)) { ?>
 		<section class="container case-carousel">
 			<div class="row" style="gap: 40px">
 				<h2 class="at-title-main_01">Mais Trabalhos do Cliente</h2>
-				<div class="owl-carousel case-carousel">
-					<?php foreach ($carrossel_itens as $item) { ?>
-						<figure>
-							<img src="<?= $item['wsg_case_carrossel_itens'] ?>" alt="">
-						</figure>
-					<?php } ?>
-				</div>
+				<?php if (!empty($carrossel_itens)) { ?>
+					<div class="owl-carousel case-carousel">
+						<?php
+						foreach ($carrossel_itens as $item) { ?>
+							<figure>
+								<img src="<?= $item['wsg_case_carrossel_itens'] ?>" alt="">
+							</figure>
+						<?php } ?>
+					</div>
+				<?php } ?>
+				<?php if (!empty($outdoor_itens)) { ?>
+					<div class="owl-carousel outdoor-carousel">
+						<?php
+						foreach ($outdoor_itens as $item) { ?>
+							<figure>
+								<img src="<?= $item['wsg_outdoor_carrossel_itens'] ?>" alt="">
+							</figure>
+						<?php } ?>
+					</div>
+				<?php } ?>
 			</div>
 		</section>
 	<?php } ?>
@@ -68,14 +83,17 @@
 							</figure>
 							<div class="at-cases_box_info">
 								<div class="at-cases_box_info_header">
-									<h3><?php //the_title(); ?></h3>
+									<h3><?php //the_title(); 
+										?></h3>
 								</div>
-								<a href="<?php //the_permalink(); ?>">Mais sobre o projeto <span class="flaticon-arrow-right"></span></a>
+								<a href="<?php //the_permalink(); 
+											?>">Mais sobre o projeto <span class="flaticon-arrow-right"></span></a>
 							</div>
 						</div>
 					</div>
 				<?php //}
-				//wp_reset_query(); ?>
+				//wp_reset_query(); 
+				?>
 			</div>
 		</div>
 	</section> -->
