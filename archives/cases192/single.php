@@ -34,7 +34,7 @@
 						<?php
 						foreach ($carrossel_itens as $item) { ?>
 							<figure>
-								<img src="<?= $item['wsg_case_carrossel_itens'] ?>" alt="">
+								<img src="<?= $item ?>" alt="">
 							</figure>
 						<?php } ?>
 					</div>
@@ -44,7 +44,7 @@
 						<?php
 						foreach ($outdoor_itens as $item) { ?>
 							<figure>
-								<img src="<?= $item['wsg_outdoor_carrossel_itens'] ?>" alt="">
+								<img src="<?= $item; ?>" alt="">
 							</figure>
 						<?php } ?>
 					</div>

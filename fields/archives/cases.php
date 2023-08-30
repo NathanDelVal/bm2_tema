@@ -56,23 +56,12 @@
 			'show_names'    => true,
 			'closed'        => false,
 		) );
-		$case_itens = $case_carrossel->add_field( array(
-			'id'            => 'wsg_case_carrossel',
-			'type'          => 'group',
-			'options'       => array(
-				'group_title'   => __( 'Item {#}' ),
-				'add_button'    => __( 'Adicionar Outro Item' ),
-				'remove_button' => __( 'Remover Item' ),
-				'sortable'      => true,
-				'closed'        => true,
-			),
-		) );
-		$case_carrossel->add_group_field( $case_itens, array(
-			// 'name'       => __( 'Imagem da arte' ),
-			'desc'       => __( 'Proporção recomendada <b><i>1:1</i></b>' ),
-			'id'         => 'wsg_case_carrossel_itens',
-			'type' => 'file',
-			'preview_size' => array( 1920/5, 780/5 ),
+		$case_carrossel->add_field( array(
+			// 'name'       => __( 'Carrossel dos Cases' ),
+			// 'desc'       => __( 'Tamanho recomendado <strong>468x800</strong>' ),
+			'id'         => 'wsg_case_carrossel',
+			'type' => 'file_list',
+			'preview_size' => array( 200/1, 80/1 ),
 			'query_args' => array( 'type' => 'image' ),
 		) );
 		$outdoor_carousel = new_cmb2_box( array(
@@ -84,26 +73,14 @@
 			'show_names'    => true,
 			'closed'        => false,
 		) );
-		$outdoor_itens = $outdoor_carousel->add_field( array(
-			'id'            => 'wsg_outdoor_carrossel',
-			'type'          => 'group',
-			'options'       => array(
-				'group_title'   => __( 'Item {#}' ),
-				'add_button'    => __( 'Adicionar Outro Item' ),
-				'remove_button' => __( 'Remover Item' ),
-				'sortable'      => true,
-				'closed'        => true,
-			),
-		) );
-		$outdoor_carousel->add_group_field( $outdoor_itens, array(
-			// 'name'       => __( 'Imagem da arte' ),
-			'desc'       => __( 'Proporção recomendada <b><i>9:3</i></b>' ),
-			'id'         => 'wsg_outdoor_carrossel_itens',
-			'type' => 'file',
-			'preview_size' => array( 1920/5, 780/5 ),
+		$outdoor_carousel->add_field( array(
+			// 'name'       => __( 'Carrossel dos Cases' ),
+			// 'desc'       => __( 'Tamanho recomendado <strong>468x800</strong>' ),
+			'id'         => 'wsg_outdoor_carrossel',
+			'type' => 'file_list',
+			'preview_size' => array( 200/1, 80/1 ),
 			'query_args' => array( 'type' => 'image' ),
 		) );
-
 		// Método de especificação de página
 		$projetosPage = get_page_by_path( 'cases', OBJECT, 'page' );
 
