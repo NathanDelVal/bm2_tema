@@ -100,14 +100,14 @@ $id_page = get_the_ID();
 										getImageThumb($wsg_case_item_img_id, '316x300');
 										?>
 									</figure>
-									<div class="at-cases_box_info">
-										<div class="at-cases_box_info_header">
-											<h3><?php echo get_the_title($caseID) ?></h3>
+										<div class="at-cases_box_info" onclick="location.href='<?php echo get_the_permalink($caseID); ?>'">
+											<div class="at-cases_box_info_header">
+												<h3><?php echo get_the_title($caseID) ?></h3>
+											</div>
+											<a>
+												Mais sobre o projeto <span class="flaticon-arrow-right"></span>
+											</a>
 										</div>
-										<a href="<?php echo get_the_permalink($caseID); ?>">
-											Mais sobre o projeto <span class="flaticon-arrow-right"></span>
-										</a>
-									</div>
 								</div>
 							</div>
 						<?php } ?>

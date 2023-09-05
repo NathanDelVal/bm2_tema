@@ -113,9 +113,9 @@ li{
     aspect-ratio: 2/1;
 }
 
-.owl-carousel.outdoor-carousel img {
+/* .owl-carousel.outdoor-carousel img {
     aspect-ratio: 9/3;
-}
+} */
 
 @media screen and (max-width: 767px) {
     .owl-carousel.video-carousel iframe {

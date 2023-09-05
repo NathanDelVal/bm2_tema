@@ -69,6 +69,7 @@
     height: 100%;
     position: relative;
     background-color: var(--color-details-primary);
+    cursor: pointer;
 }
 
 .at-cases_box_info_header{
@@ -119,14 +120,14 @@
     font-weight: 500;
 }
 .at-cases_box_info:hover a{
-    color: var(--bg-color-black);
+    color: var(--bg-color-black) !important;
 }
 
 .at-cases_box_info a span{
     font-size: 28px;
     transition: .5s ease-out;
 }
-.at-cases_box_info a:hover span{
+.at-cases_box_info:hover a span{
     transform: translateX(10px);
 }
 .at-cases_box_info a img{
