@@ -13,10 +13,11 @@
 							$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 							$args = array (
 								'post_type'         => 'post',
-								'posts_per_page'    => 6,
+								'posts_per_page'    => 3,
 								'paged' => $paged
 							);
-							$query = new WP_Query( $args );
+							$query = new WP_Query($args);
+							
 							if ( $query->have_posts() ) {
 								while ( $query->have_posts() ) {
 									$query->the_post();

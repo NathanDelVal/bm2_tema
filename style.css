@@ -11,6 +11,13 @@
     --bg-color-black: #000000;
 }
 
+@media screen and (max-width: 576px) {
+    :root {
+        font-size: 11px;
+        letter-spacing: -1px;
+    }
+}
+
 *[class*=display-] {
     display: none;
 }
@@ -250,6 +257,21 @@ li{
         background-image: url(./img/menu.svg);
     }
 
+}
+
+.wq-pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.wq-pagination ul {
+    display: flex;
+    gap: 10px;
+}
+
+.wq-pagination ul a {
+    font-size: 16px;
+    color: var(--color-details-primary);
 }
 
 /***** Tamanho para smartphones na vertical *****/

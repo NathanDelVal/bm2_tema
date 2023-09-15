@@ -84,10 +84,10 @@
 			if (is_home()) {
 				if (isset($query->query_vars['post_type'])) {
 					if ($query->query_vars['post_type'] == 'post') {
-						$query->set('posts_per_page', 6);
+						$query->set('posts_per_page', 3);
 					}
 				}else{
-					$query->set('posts_per_page', 6);
+					$query->set('posts_per_page', 3);
 				}
 			}else if(is_page('blog') || is_category() || is_tag() || is_search() || is_date()) {
 				$query->set('posts_per_page', 6);
