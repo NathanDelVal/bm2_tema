@@ -89,6 +89,7 @@ $id_endereco = get_page_by_path('endereco', OBJECT, 'contatos')->ID;
 
 		<div class="copy">
 			<p>© Copyright 2023 - BM2 - Todos os direitos reservados.</p>
+			<p>CNPJ: 20.083.251/0001-94</p>
 		</div>
 	</div>
 </footer>
