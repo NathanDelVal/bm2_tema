@@ -150,6 +150,12 @@
     display: block !important;
 }
 
+.case-carousel .owl-item img {
+    aspect-ratio: 1.5/1;
+    object-fit: cover;
+    object-position: center;
+}
+
 /***** Tamanho para smartphones na vertical *****/
 @media screen and (max-width: 576px){
 
