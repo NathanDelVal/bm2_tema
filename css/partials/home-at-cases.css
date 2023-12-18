@@ -152,8 +152,7 @@
 
 .case-carousel .owl-item img {
     aspect-ratio: 1.5/1;
-    object-fit: cover;
-    object-position: center;
+    object-fit: contain;
 }
 
 /***** Tamanho para smartphones na vertical *****/
