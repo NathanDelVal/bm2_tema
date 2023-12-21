@@ -26,7 +26,7 @@
 	$outdoor_itens = get_post_meta(get_the_ID(), 'wsg_outdoor_carrossel', true);
 
 	if (!empty($carrossel_itens) || !empty($outdoor_itens)) { ?>
-		<section class="container case-carousel">
+		<section class="container">
 			<div class="row" style="gap: 40px">
 				<h2 class="at-title-main_01">Mais Trabalhos do Cliente</h2>
 				<?php if (!empty($carrossel_itens)) { ?>
