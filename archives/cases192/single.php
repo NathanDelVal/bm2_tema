@@ -6,7 +6,7 @@
 
 	<div class="at-cases-banner">
 		<div class="container">
-			<figure>
+			<figure style="text-align:center">
 				<?php
 				$wsg_case_interna_banner_img_id = get_post_meta(get_the_ID(), 'wsg_case_interna_banner_img_id', true);
 				getImageThumb($wsg_case_interna_banner_img_id, '1300x560');
